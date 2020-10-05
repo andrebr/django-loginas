@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v0.3.10 (2020-10-05)
+
+### Fixes
+
+* TypeError: expected string or bytes-like object [andrebr]
+
 ## v0.3.8 (2019-12-05)
 
 ### Features

@@ -46,7 +46,7 @@ def _load_module(path):
 @csrf_protect
 @require_POST
 def user_login(request, user_id):
-    user = User.objects.get(pk=unquote(user_id))
+    user = User.objects.get(pk=unquote(str(user_id)))
 
     if isinstance(la_settings.CAN_LOGIN_AS, str):
         can_login_as = _load_module(la_settings.CAN_LOGIN_AS)
